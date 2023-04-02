@@ -12,7 +12,7 @@ class Vehicles(models.Model):
         (CNG, 'Cng'),
     )
     brand = models.CharField(blank=True, null=True, max_length=512)
-    price = models.DecimalField(blank=True, null=True, max_digits=15, decimal_places=2)
+    price = models.CharField(blank=True, null=True, max_length=100)
     fuel = models.PositiveSmallIntegerField(choices=FUEL_CHOICE, blank=True, null=True)
     seat = models.IntegerField(blank=True, null=True)
     enginenumber = models.CharField(blank=True, null=True, max_length=100)

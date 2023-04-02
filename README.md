@@ -32,6 +32,8 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
+**Note:** before step 2 add .env file in Base directory where .env.example exists and copy all from .env.example. 
+
 **2: make a superuser so you have credentials to look the scrapped data into the admin panel:**
 
 ```
@@ -44,7 +46,12 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-**commands to run: **
-_a:_ server will be running on http://localhost:8000
-_b:_ On http://localhost:8000 you will have an button to start scrapping.
-_c:_ On http://localhost:8000/admin you can access the admin panel and use the credentials you have created earlier in step 2 to login and in vehicles you can have the vehicles scrapped data.
+**hints:**
+
+**_a:_** server will be running on http://localhost:8000
+
+**_b:_** On http://localhost:8000 you will have an button to start scrapping.
+
+**_c:_** On http://localhost:8000/admin you can access the admin panel and use the credentials you have created earlier in step 2 to login and in vehicles you can have the vehicles scrapped data.
+
+
